@@ -1,0 +1,87 @@
+textarea{
+  	width:300px;
+  	height:100px;
+  	resize:none;
+  	font-size: 16px;
+}
+input[type="password"]{
+	width:300px;
+	height:30px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+input[type="select"]{
+  width:300px;
+  height:30px;
+  font-size: 16px;
+}
+
+#form{text-align: center;}
+
+a{text-decoration: none;}
+
+#mp{
+	background-color: gray;
+
+	padding:15px;
+	width:155px;
+	height:45px;
+	display:inline;
+
+	text-align: center;
+	transition:.4s;
+	text-decoration: none;
+	color:black;
+
+	cursor:pointer;
+
+	border:1px dashed black;
+}
+
+#mp:hover{
+	opacity:.5;
+	text-decoration: underline;
+}
+
+table{width:100%; border-collapse:collapse;}
+table #head{padding:7px; font-weight: bold;text-align: center;font-size: 18px;color:gray;}
+table td{padding:7px; border: #CCC 1px solid;}
+table tr:nth-child(odd){background: #FFF;}
+table tr:nth-child(even){background: #FEFEFE;}
+table a{color:gray;}
+table a:hover{color:gray;text-decoration: underline;}
+
+.comment hr{
+  border-top: 1px black dashed;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
+  margin:2px;
+  margin-bottom:10px;
+}
+
+label{
+  float:left;
+  line-height: 30px;
+  height:30px;
+  width:150px;
+  color:lightgray;
+  text-align: right;
+  margin-right:5px;
+}
+
+textarea{
+  width:300px;
+  height:100px;
+  resize:none;
+}
+
+input{
+  height:30px;
+  width:300px;
+  margin-bottom:20px;
+}
+
+fieldset{
+  margin:auto;
+}

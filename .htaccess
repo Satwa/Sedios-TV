@@ -1,0 +1,19 @@
+SetEnv REGISTER_GLOBALS 0
+SetEnv PHP_VER 5_4
+
+RewriteEngine on
+Options +FollowSymLinks
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+<Files *.sql>
+	DENY FROM all
+</Files>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                        "access plus 1 week"
+    ExpiresByType text/css                "access plus 15 minutes"
+    ExpiresByType application/javascript  "access plus 1 day"
+</IfModule>

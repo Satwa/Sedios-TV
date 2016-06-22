@@ -1,0 +1,26 @@
+#team{
+	background-color: gray;
+	width:200px;
+	font-weight: bold;
+	color:white;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	line-height: 30px;
+	cursor:pointer;
+}
+#go{
+	text-align: right;
+	float:right;
+	display:inline-block;
+	background:lightgray;
+	color:black;
+}
+#level{
+	text-align: left;
+	float:left;
+	display:inline-block;
+	background:lightgray;
+	color:black;
+	margin-right:10px;
+}

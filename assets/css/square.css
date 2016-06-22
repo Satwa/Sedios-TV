@@ -1,0 +1,221 @@
+@media only screen and (min-width: 750px){
+  @-webkit-keyframes spinningH {
+    from {
+      -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+      -webkit-transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+  @-ms-keyframes spinningH {
+    from {
+      -ms-transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+      -ms-transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+  @keyframes spinningH {
+    from {
+      -webkit-transform: rotateX(0deg) rotateY(0deg);
+              transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+      -webkit-transform: rotateX(360deg) rotateY(360deg);
+              transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+   #square{
+    -webkit-perspective : 1000px;
+    -o-perspective      : 1000px;
+    -ms-perspective     : 1000px;
+    perspective         : 1000px;
+
+    -webkit-perspective-origin : 50% 50%;
+    -moz-perspective-origin    : 50% 50%;
+    -moz-transform-origin      : 50% 50%;
+    -o-perspective-origin      : 50% 50%;
+    -ms-perspective-origin     : 50% 50%;
+    -webkit-perspective-origin         : 50% 50%;
+            perspective-origin         : 50% 50%;
+  }
+
+  .animate{
+    -webkit-animation : spinningH 6s infinite linear;
+    -ms-animation     : spinningH 6s infinite linear;
+    animation         : spinningH 6s infinite linear;
+  }
+
+  #cube {
+    position: relative;
+    margin: 0 auto;
+    height: 340px;
+    width: 340px;
+
+    -webkit-transition : -webkit-transform 2s linear;
+    transition         : transform 2s linear;
+
+    -webkit-transform-style : preserve-3d;
+    -o-transform-style      : preserve-3d;
+    -ms-transform-style     : preserve-3d;
+    transform-style         : preserve-3d;
+  }
+
+  #cube>div {
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    padding: 20px;
+    opacity: 0.9;
+    background-position:center center;
+  }
+  /*Face au loading*/
+  #cube div:nth-child(1) {
+    -webkit-transform : translateZ(160px);
+    -ms-transform     : translateZ(160px);
+    transform         : translateZ(160px);
+    background-color  : #2E272F;
+    background-image: url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Face droite au loading*/
+  #cube div:nth-child(2) {
+    -webkit-transform : rotateY(90deg) translateZ(160px);
+    -ms-transform     : rotateY(90deg) translateZ(160px);
+    transform         : rotateY(90deg) translateZ(160px);
+    background-color  : #2D3A4D;
+    background-image: url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Partie derrière - Le logo*/
+  #cube div:nth-child(3) {
+    -webkit-transform : rotateY(180deg) translateZ(160px);
+    -ms-transform     : rotateY(180deg) translateZ(160px);
+    transform         : rotateY(180deg) translateZ(160px);
+    background-color  : #2D1C12;
+    background-image: url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Face gauche au loading*/
+  #cube div:nth-child(4) {
+    -webkit-transform : rotateY(-90deg) translateZ(160px);
+    -ms-transform     : rotateY(-90deg) translateZ(160px);
+    transform         : rotateY(-90deg) translateZ(160px);
+    background-color  : #693C1F;
+    background-image  : url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Face dessous*/
+  #cube div:nth-child(5) {
+    -webkit-transform : rotateX(-90deg) translateZ(160px) rotate(180deg);
+    -ms-transform     : rotateX(-90deg) translateZ(160px) rotate(180deg);
+    transform         : rotateX(-90deg) translateZ(160px) rotate(180deg);
+    background-color  : #955122;
+    background-image  : url(../img/logo.png);
+    background-repeat :no-repeat;
+  }
+  /*HTML5*/
+  #cube div:nth-child(6)  {
+    -webkit-transform : rotateX(90deg) translateZ(160px);
+    -ms-transform     : rotateX(90deg) translateZ(160px);
+    transform         : rotateX(90deg) translateZ(160px);
+    background-color  : #E34C26;
+    background-image: url(../img/logo.png);
+    background-repeat :no-repeat;
+    text-align:center;  
+  }
+}
+
+#small{
+  background-color:rgba(0, 0, 0, 0.6);
+  color:lightgray;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:70%;
+  cursor:pointer;
+}
+#small #t{
+  font-size: 24px;
+}
+
+span hr{
+  border-top: 2px gray dashed;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
+  margin:2px;
+}
+
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+*/
+@media only screen and (max-width: 750px){
+  #small{display:none;}
+  #cube {
+    margin: auto;
+    height: 525px;
+    width: 338px;
+  }
+
+  #cube>div {
+    height: 128px;
+    width: 128px;
+    padding: 20px;
+    float:left;
+    opacity: 0.9;
+    background-position:center center;
+    background-size:128px;
+  }
+  /*Face au loading*/
+  #cube div:nth-child(1) {
+    background-color  : #2E272F;
+    background-image: url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Face droite au loading*/
+  #cube div:nth-child(2) {
+    background-color  : #2D3A4D;
+    background-image: url();
+    background-repeat : no-repeat;
+  }
+  /*Partie derrière - Le logo*/
+  #cube div:nth-child(3) {
+    background-color  : #2D1C12;
+    background-image: url(../img/logo.png);
+    background-repeat : no-repeat;
+  }
+  /*Face gauche au loading*/
+  #cube div:nth-child(4) {
+    background-color  : #693C1F;
+    background-image  : url();
+    background-repeat : no-repeat;
+  }
+  /*Face dessous*/
+  #cube div:nth-child(5) {
+    background-color  : #955122;
+    background-image  : url();
+    background-repeat :no-repeat;
+  }
+  /*HTML5*/
+  #cube div:nth-child(6)  {
+    background-color  : #E34C26;
+    background-image: url();
+    background-repeat :no-repeat;
+    text-align:center;  
+  }
+}

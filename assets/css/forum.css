@@ -1,0 +1,139 @@
+#form{color:lightgray;}
+
+#cats{
+	margin:auto;
+	max-width:900px;
+	margin-top:40px;
+}
+
+#cat{
+	width:290px;
+	height:200px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	background-color: gray;
+	float:left;
+
+  	transition: all .8s;
+  	-moz-transition: all .8s;
+  	-webkit-transition: all .8s;
+  	-ms-transition: all .8s;
+}
+#cat:hover{
+	opacity: 0.8;
+}
+
+#cat #title{
+	text-align:center;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-size: 20px;
+	background-color:lightgray;
+}
+
+#cat #desc{
+	color:white;
+	padding:5px;
+	padding-top:10px;
+	text-align: center;
+}
+
+#new{
+	padding:10px;
+	margin:5px;
+	float:right;
+	margin-right:20px;
+	cursor:pointer;
+	background:gray;
+	height:30px;
+	line-height:30px;
+	color:white;
+
+  	transition: all .5s;
+  	-moz-transition: all .5s;
+  	-webkit-transition: all .5s;
+  	-ms-transition: all .5s;
+}
+#new:hover{
+	opacity: .8;
+}
+
+a{color:gray;}
+
+table{width:100%; border-collapse:collapse;}
+table #head{padding:7px; font-weight: bold;text-align: center;font-size: 18px;color:gray;}
+table td{padding:7px; border: #CCC 1px solid;}
+table tr:nth-child(odd){background: #FFF;}
+table tr:nth-child(even){background: #FEFEFE;}
+
+#content{padding:10px;}
+
+#thread{
+	max-width:900px;
+	margin:auto;
+	background-color: gray;
+}
+#thread a{color:lightgray;}
+hr{
+  border-top: 1px black dashed;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
+  margin:2px;
+}
+h3{margin:0;margin-left:5px;}
+#thread #content, .reply #content{background-color:gray;padding:10px;}
+
+.reply{
+	max-width:900px;
+	margin:auto;
+	background-color: gray;
+}
+span{color:lightgray;font-size:20px;}
+#right{text-align:right;color:black;float:right;padding-right:5px;}
+
+#replyform{
+	max-width:900px;
+	margin:auto;
+	background-color: gray;
+	margin-top:20px;
+	padding-top:20px;
+	text-align:center;
+}
+
+#replyform textarea{
+  width:400px;
+  height:100px;
+  resize:none;
+}
+
+#replyform input{
+  height:30px;
+  width:300px;
+  margin-bottom:20px;
+}
+form{margin:auto; width:500px;}
+
+#thread input{
+  height:30px;
+  width:400px;
+  margin-bottom:20px;
+}
+
+#thread label{
+  line-height: 30px;
+  height:30px;
+  width:150px;
+  color:lightgray;
+  text-align: right;
+  margin-right:5px;
+}
+
+#thread textarea{
+  width:400px;
+  height:200px;
+  resize:none;
+  background-color: white;
+}
